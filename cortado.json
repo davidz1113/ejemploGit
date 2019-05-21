@@ -1,0 +1,1538 @@
+{
+    "name": "PROCESO SALUD PUBLICA",
+    "description": "",
+    "items": [{
+        "name": "PROCESO SALUD PUBLICA",
+        "description": "",
+        "items": [
+            [{
+                "type": "multipleFile",
+                "variable": "fileadjunto",
+                "dataType": "multiplefile",
+                "id": "fileadjunto",
+                "label": "ADJUNTAR ACTA",
+                "required": true,
+                "requiredFieldErrorMessage": "Debe seleccionar un archivo",
+                "size": 1024,
+                "colSpan": 12
+            }],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "ACTA DE INSPECCIÓN SANITARIA A ESTABLECIMIENTOS ESPECIALES GENERADORES DE RESIDUOS PELIGROSOS",
+                "colSpan": 12,
+                "section": true
+            }],
+            [{
+                    "type": "text",
+                    "variable": "textciudad",
+                    "dataType": "string",
+                    "id": "textciudad",
+                    "label": "CIUDAD",
+                    "defaultValue": "San Juan de Pasto",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6
+                },
+                {
+                    "type": "datetime",
+                    "variable": "timefechavisita",
+                    "id": "timefechavisita",
+                    "label": "FECHA VISITA  INSPECCIÓN",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+                }
+            ],
+            [{
+                    "type": "text",
+                    "variable": "textnumeroacta",
+                    "dataType": "integer",
+                    "id": "textnumeroacta",
+                    "label": "NÚMERO ACTA",
+                    "defaultValue": "",
+                    "placeholder": "Digite el número de la acta",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6,
+                    "filter": true
+                },
+                {
+                    "type": "text",
+                    "variable": "textficha",
+                    "dataType": "integer",
+                    "id": "textficha",
+                    "label": "FICHA No",
+                    "defaultValue": "",
+                    "placeholder": "Digite el número de ficha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6,
+                    "filter": true
+                }
+            ],
+            [{
+                "type": "text",
+                "variable": "textentidad",
+                "dataType": "string",
+                "id": "textentidad",
+                "label": "ENTIDAD TERRITORIAL DE SALUD",
+                "defaultValue": "SECRETARÍA DE SALUD DE PASTO",
+                "placeholder": "",
+                "hint": "",
+                "required": true,
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+            }],
+            [{
+                    "type": "title",
+                    "id": "title0000000001",
+                    "label": "IDENTIFICACIÓN DE ESTABLECIMIENTO",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "text",
+                    "variable": "texttipoestablecimiento",
+                    "dataType": "string",
+                    "id": "texttipoestablecimiento",
+                    "label": "TIPO DE ESTABLECIMIENTO",
+                    "defaultValue": "",
+                    "placeholder": "Digite el tipo de establecimiento",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textrazoncial",
+                    "dataType": "string",
+                    "id": "textrazoncial",
+                    "label": "RAZÓN SOCIAL",
+                    "defaultValue": "",
+                    "placeholder": "Digite razón social",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textdireccion",
+                    "dataType": "string",
+                    "id": "textdireccion",
+                    "label": "DIRECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite dirección",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+
+            ],
+            [{
+
+                "type": "text",
+                "variable": "textcorreo",
+                "dataType": "string",
+                "id": "textcorreo",
+                "label": "CORREO ELECTRÓNICO",
+                "defaultValue": "",
+                "placeholder": "Digite correo electrónico",
+                "hint": "",
+                "required": true,
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+            }],
+            [{
+
+                "type": "text",
+                "variable": "textnompropietario",
+                "dataType": "string",
+                "id": "textnompropietario",
+                "label": "NOMBRE DEL PROPIETARIO",
+                "defaultValue": "",
+                "placeholder": "Digite el nombre del propietario",
+                "hint": "",
+                "required": true,
+                "requiredFieldErrorMessage": "El nombre del propietario es requerido",
+                "colSpan": 12
+            }],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectidentificacionpropietario",
+                    "id": "selectidentificacionpropietario",
+                    "label": "DOCUMENTO DE IDENTIFICACIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "options": [{
+                            "value": "1",
+                            "label": "C.C"
+                        },
+                        {
+                            "value": "2",
+                            "label": "C.E"
+                        },
+                        {
+                            "value": "3",
+                            "label": "NIT"
+
+                        }
+                    ],
+                    "colSpan": 6
+
+                },
+                {
+
+                    "type": "text",
+                    "variable": "textnumdocpro",
+                    "dataType": "integer",
+                    "id": "textnumdocpro",
+                    "label": "Número de documento",
+                    "defaultValue": "",
+                    "placeholder": "Digite el número de documento",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "El número del documento es obligatorio",
+                    "colSpan": 6,
+                    "filter": true
+
+                }
+
+            ],
+            [{
+
+                    "type": "text",
+                    "variable": "textreprelegal",
+                    "dataType": "string",
+                    "id": "textreprelegal",
+                    "label": "NOMBRE DEL REPRESENTANTE LEGAL",
+                    "defaultValue": "",
+                    "placeholder": "Digite nombre del representante legal",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "El nombre del representante legal es requerido",
+                    "colSpan": 12
+                }
+
+            ],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectidereprelegal",
+                    "id": "selectidereprelegal",
+                    "label": "DOCUMENTO DE IDENTIFICACIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "options": [{
+                            "value": "1",
+                            "label": "C.C"
+                        },
+                        {
+                            "value": "2",
+                            "label": "C.E"
+                        },
+                        {
+                            "value": "3",
+                            "label": "NIT"
+
+                        }
+                    ],
+                    "colSpan": 6,
+                    "filter": true
+
+
+                },
+                {
+
+                    "type": "text",
+                    "variable": "textnumdocreprelegal",
+                    "dataType": "integer",
+                    "id": "textnumdocreprelegal",
+                    "label": "Número de documento",
+                    "defaultValue": "",
+                    "placeholder": "Digite el número de documento",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6,
+                    "filter": true
+
+                }
+
+            ],
+            [{
+
+                    "type": "text",
+                    "variable": "textdirecnotificacion",
+                    "dataType": "string",
+                    "id": "textdirecnotificacion",
+                    "label": "DIRECCIÓN DE NOTIFICACIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite dirección de notificación",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+                },
+                {
+                    "type": "text",
+                    "variable": "texthorario",
+                    "dataType": "string",
+                    "id": "texthorario",
+                    "label": "HORARO Y DÍA DE FUNCIONAMIENTO",
+                    "defaultValue": "",
+                    "placeholder": "Digite horario y día de funcionamiento",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 5
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textnumtrabajadores",
+                    "dataType": "integer",
+                    "id": "textnumtrabajadores",
+                    "label": "NÚMERO DE TRABAJADORES",
+                    "defaultValue": "",
+                    "placeholder": "Digite número de trabajadores",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3,
+                    "filter": true
+                }
+
+            ],
+            [{
+                    "type": "datetime",
+                    "variable": "timefechaultimavisita",
+                    "id": "timefechaultimavisita",
+                    "label": "FECHA DE LA ULTIMA VISITA",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 4
+                },
+                {
+                    "type": "text",
+                    "variable": "textconceemitido",
+                    "dataType": "integer",
+                    "id": "textconceemitido",
+                    "label": "CONCEPTO EMITIDO",
+                    "defaultValue": "",
+                    "placeholder": "Digite concepto emitido",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 8,
+                    "filter": true
+
+                }
+            ],
+            [{
+                "type": "dropdown",
+                "variable": "selectmotivovisita",
+                "id": "selectmotivovisita",
+                "label": "MOTIVO VISITA",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "required": false,
+                "requiredFieldErrorMessage": "",
+                "options": [{
+                        "value": "1",
+                        "label": "Programación"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Solicitud del interesado"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Asociada a peticiones, quejas y reclamos"
+
+                    },
+                    {
+                        "value": "4",
+                        "label": "Solicitud oficial"
+
+                    },
+                    {
+                        "value": "5",
+                        "label": "Evento de interés en salud pública"
+
+                    },
+                    {
+                        "value": "6",
+                        "label": "Solicitud de práctica de pruebas/ procesos sancionatorios admin"
+
+                    },
+                    {
+                        "value": "7",
+                        "label": "Otro"
+
+                    }
+                ],
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "text",
+                "variable": "textotro",
+                "dataType": "string",
+                "id": "textotro",
+                "label": "OTRO",
+                "defaultValue": "",
+                "placeholder": "Si su motivo de visita fue otro, especifique",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "ASPECTOS A VERIFICAR",
+                "colSpan": 12,
+                "section": true
+            }],
+            [{
+                "type": "subtitle",
+                "id": "subtitle0000000001",
+                "label": "VISITA INSPECCIÓN",
+                "colSpan": 12
+            }],
+            [{
+                    "type": "datetime",
+                    "variable": "timefechavisitainsp",
+                    "id": "timefechavisitainsp",
+                    "label": "FECHA",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+                },
+                {
+
+                    "type": "time",
+                    "variable": "timehoravisitainsp",
+                    "id": "timehoravisitainsp",
+                    "label": "HORA",
+                    "placeholder": "Seleccione hora",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La hora es obligatoria",
+                    "colSpan": 6
+
+                }
+
+            ],
+            [{
+                "type": "subtitle",
+                "id": "subtitle0000000001",
+                "label": "VISITA CONTROL",
+                "colSpan": 12
+            }],
+            [{
+                    "type": "datetime",
+                    "variable": "timefechavisitacont",
+                    "id": "timefechavisitacont",
+                    "label": "FECHA",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+                },
+                {
+
+                    "type": "time",
+                    "variable": "timehoravisitacont",
+                    "id": "timehoravisitacont",
+                    "label": "HORA",
+                    "placeholder": "Seleccione hora",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La hora es obligatoria",
+                    "colSpan": 6
+
+                }
+
+            ],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "1   UBICACIÓN Y ALREDEDORES: Ley 9 de 1979: Artículos 23,158,159,160,161,162,163,164",
+                "colSpan": 12
+            }],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "1.1 El establecimiento está ubicado en un lugar seco, no inundable, en terreno de fácil drenaje y alejado de lugares generadores de molestias sanitarias (ruido, olores ofensivos) o focos de contaminación (basuras, malezas, aguas estancadas, objetos en desuso, criaderos de mosquitos, presencia de plagas) que pueden afectar el funcionamiento del establecimiento.",
+                    "colSpan": 12
+                }
+
+            ],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectcvi1_1",
+                    "id": "selectcvi1_1",
+                    "label": "CAL. VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "event": true,
+                    "subtotal": "calvi",
+                    "ressubtotal": "labelconceptovi",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvi1_1",
+                    "dataType": "string",
+                    "id": "texthvi1_1",
+                    "label": "HALLAZGOS VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita inspección",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "dropdown",
+                    "variable": "selectcvc1_1",
+                    "id": "selectcvc1_1",
+                    "label": "CAL. VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true,
+                    "event": true,
+                    "subtotal": "calvc",
+                    "ressubtotal": "labelconceptovc",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvc1_1",
+                    "dataType": "string",
+                    "id": "texthvc1_1",
+                    "label": "HALLAZGOS VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita control",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "1.2 Los materiales de la construcción expuestos al exterior son resistentes al medio ambiente, al uso normal y limitan al ingreso de plagas roedores.",
+                    "colSpan": 12
+                }
+
+            ],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectcvi1_2",
+                    "id": "selectcvi1_2",
+                    "label": "CAL. VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "event": true,
+                    "subtotal": "calvi",
+                    "ressubtotal": "labelconceptovi",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvi1_2",
+                    "dataType": "string",
+                    "id": "texthvi1_2",
+                    "label": "HALLAZGOS VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita inspección",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "dropdown",
+                    "variable": "selectcvc1_2",
+                    "id": "selectcvc1_2",
+                    "label": "CAL. VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true,
+                    "event": true,
+                    "subtotal": "calvc",
+                    "ressubtotal": "labelconceptovc",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvc1_2",
+                    "dataType": "string",
+                    "id": "texthvc1_2",
+                    "label": "HALLAZGOS VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita control",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "1.3 Los andenes se encuentran en buen estado, libres de basuras y malezas como focos de contaminación.",
+                    "colSpan": 12
+                }
+
+            ],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectcvi1_3",
+                    "id": "selectcvi1_3",
+                    "label": "CAL. VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": false,
+                    "requiredFieldError": "",
+                    "event": true,
+                    "subtotal": "calvi",
+                    "ressubtotal": "labelconceptovi",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ],
+                    "colSpan": 2
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvi1_3",
+                    "dataType": "string",
+                    "id": "texthvi1_3",
+                    "label": "HALLAZGOS VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita inspección",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "dropdown",
+                    "variable": "selectcvc1_3",
+                    "id": "selectcvc1_3",
+                    "label": "CAL. VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true,
+                    "event": true,
+                    "subtotal": "calvc",
+                    "ressubtotal": "labelconceptovc",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvc1_3",
+                    "dataType": "string",
+                    "id": "texthvc1_3",
+                    "label": "HALLAZGOS VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita control",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "1.4 Las paredes, ventanas, techos, puertas y pisos se encuentran en buen estado (sin grietas, perforaciones o roturas).",
+                    "colSpan": 12
+                }
+
+            ],
+            [{
+                    "type": "dropdown",
+                    "variable": "selectcvi1_4",
+                    "id": "selectcvi1_4",
+                    "label": "CAL. VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "event": true,
+                    "subtotal": "calvi",
+                    "ressubtotal": "labelconceptovi",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvi1_4",
+                    "dataType": "string",
+                    "id": "texthvi1_4",
+                    "label": "HALLAZGOS VISITA INSPECCIÓN",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita inspección",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "dropdown",
+                    "variable": "selectcvc1_4",
+                    "id": "selectcvc1_4",
+                    "label": "CAL. VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true,
+                    "event": true,
+                    "subtotal": "calvc",
+                    "ressubtotal": "labelconceptovc",
+                    "options": [{
+                            "value": "2",
+                            "label": "Cumple completamente"
+                        },
+                        {
+                            "value": "1",
+                            "label": "No cumple"
+                        },
+                        {
+                            "value": "na",
+                            "label": "No Aplica"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No Observado"
+
+                        }
+                    ]
+
+                },
+                {
+                    "type": "text",
+                    "variable": "texthvc1_4",
+                    "dataType": "string",
+                    "id": "texthvc1_4",
+                    "label": "HALLAZGOS VISITA CONTROL",
+                    "defaultValue": "",
+                    "placeholder": "Digite hallazgos de la visita control",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+            ],
+
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "SUMATORIA VISITA INSPECCIÓN",
+                "colSpan": 12
+
+            }],
+            [{
+                    "type": "label",
+                    "variable": "textconceptovi",
+                    "dataType": "string",
+                    "id": "textconceptovi",
+                    "label": "CONCEPTO VISITA INSPECCIÓN",
+                    "defaultValue": "-",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "label",
+                    "variable": "labelconceptovi",
+                    "dataType": "string",
+                    "id": "labelconceptovi",
+                    "label": "",
+                    "defaultValue": "0",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "event": true,
+                    "script": "if ((document.getElementById('labelconceptovi')).innerText > 3) {(document.getElementById('textconceptovi')).innerText = 'Paso 2';}else{(document.getElementById('textconceptovi')).innerText = 'No Paso 2';}"
+
+                }
+            ],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "SUMATORIA VISITA CONTROL",
+                "colSpan": 12
+
+            }],
+            [{
+                    "type": "label",
+                    "variable": "textconceptovc",
+                    "dataType": "string",
+                    "id": "textconceptovc",
+                    "label": "CONCEPTO VISITA CONTROL",
+                    "defaultValue": "-",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "label",
+                    "variable": "labelconceptovc",
+                    "dataType": "string",
+                    "id": "labelconceptovc",
+                    "label": "",
+                    "defaultValue": "0",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "event": true,
+                    "script": "if ((document.getElementById('labelconceptovc')).innerText > 3) {(document.getElementById('textconceptovc')).innerText = 'Paso 2';}else{(document.getElementById('textconceptovc')).innerText = 'No Paso 2';}"
+
+                }
+            ],
+            [{
+                "type": "text",
+                "variable": "textplazo",
+                "dataType": "integer",
+                "id": "textplazo",
+                "label": "PLAZO PARA CUMPLIR EXIGENCIAS DEJADAS (EN DÍAS CALENDARIO).",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 4
+
+
+            }],
+
+
+
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "CALIFICACIÓN: Cumple completamente 2; No cumple 1; No aplica NA; No observado NO.",
+                "colSpan": 12
+            }],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "REQUERIMIENTOS SANITARIOS",
+                "colSpan": 12,
+                "section": true
+
+            }],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "Para ajustar el establecimiento a ls normas sanitarias debe darse cumplimiento a los aspectos calificados cada UNO (1). (Citar numerales):",
+                "colSpan": 12
+
+            }],
+            [{
+                    "type": "textarea",
+                    "variable": "text_vi",
+                    "id": "text_vi",
+                    "label": "VISITA INSPECCIÓN:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6,
+                    "filter": true
+
+                },
+                {
+                    "type": "textarea",
+                    "variable": "text_vc",
+                    "id": "text_vc",
+                    "label": "VISITA CONTROL:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6,
+                    "filter": true
+
+
+                }
+
+
+            ],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "De conformidad con lo establecido en la legislación sanitaria vigente, especialmente en la Ley 09 de 1979 y su reglamentación, en particular:",
+                "colSpan": 12
+            }],
+            [
+
+                {
+                    "type": "text",
+                    "variable": "text",
+                    "dataType": "string",
+                    "id": "text",
+                    "label": "",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 8
+
+                }
+            ],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": " Para el cumplimiento de las exigencias dejadas en cada visita, se concede el plazo fijado al final del recuadro. (El plazo máximo fijado no podrá ser mayor a 30 días calendario contados a partir de la fecha de notificación). En caso de incumplimiento se procederá a aplicar las medidas preventivas y/o de seguridad previstas en la legislación sanitaria vigente.",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "APLICACIÓN DE MEDIDA SANITARIA DE SEGURIDAD",
+                "colSpan": 12
+
+            }],
+
+            [{
+                    "type": "checkbox",
+                    "variable": "check_amss_si",
+                    "id": "check_amss_si",
+                    "label": "SI",
+                    "defaultValue": true,
+                    "hint": "",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true
+
+                },
+                {
+                    "type": "checkbox",
+                    "variable": "check_amss_no",
+                    "id": "check_amss_no",
+                    "label": "NO",
+                    "defaultValue": true,
+                    "hint": "",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 2,
+                    "filter": true
+
+                },
+                {
+
+                    "type": "text",
+                    "variable": "textcualamss",
+                    "dataType": "string",
+                    "id": "textcualamss",
+                    "label": "CUAL?",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 8
+                }
+
+            ],
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "DEFINICIONES",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "CONCEPTO FAVORABLE: Cumple las condiciones sanitarias establecidas en la normatividad sanitaria vigente.",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "CONCEPTO PENDIENTE: Al cumplimiento de los requerimientos sanitarios consignados en la presente ACTA.",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "CONCEPTO NO FAVORABLE: No admite exigencias. Se procede a aplicar medidas sanitarias de seguridad.",
+                "colSpan": 12
+
+            }],
+
+            [{
+                "type": "title",
+                "id": "title0000000001",
+                "label": "OBSERVACIONES",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "textarea",
+                "variable": "text_avi",
+                "id": "text_asvi",
+                "label": "Por parte de la autoridad sanitaria en visita de inspección:",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "textarea",
+                "variable": "text_avc",
+                "id": "text_avc",
+                "label": "Por parte de la autoridad sanitaria en visita de control:",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "textarea",
+                "variable": "text_evi",
+                "id": "text_evi",
+                "label": "Por parte del establecimiento en visita de inspección:",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+
+            }],
+            [{
+                "type": "textarea",
+                "variable": "text_evc",
+                "id": "text_evc",
+                "label": "Por parte del establecimiento en visita de control:",
+                "defaultValue": "",
+                "placeholder": "",
+                "hint": "",
+                "requiredFieldErrorMessage": "",
+                "colSpan": 12
+
+            }],
+            [{
+                    "type": "title",
+                    "id": "title0000000001",
+                    "label": "NOTIFICACIÓN DEL ACTA",
+                    "colSpan": 12,
+                    "section": true
+
+                }
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "Para constancia previa lectura y ratificación del contenido de la presente acta firman los funcionarios y personas que intervinieron en la visita:",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "datetime",
+                    "variable": "timefechanoti",
+                    "id": "timefechanoti",
+                    "label": "Fecha:",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textciudadnoti",
+                    "dataType": "string",
+                    "id": "textciudadnoti",
+                    "label": "Ciudad:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 6
+
+                }
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "De la presente acta se deja copia en poder del interesado, representante legal, responsable del establecimiento o quien atendió la visita.",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                "type": "subtitle",
+                "id": "title0000000001",
+                "label": "NOTA: El acta debe ser notificada de un plazo no mayor de cinco (5) días contados a partir de la realización de la visita.",
+                "colSpan": 12
+
+            }],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "NOTIFICACIÓN VISITA INSPECCIÓN",
+                    "colSpan": 12,
+                    "bold": true
+
+
+                }
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "POR PARTE DEL FUNCIONARIO DE SALUD:",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "text",
+                    "variable": "textnomfvC",
+                    "dataType": "string",
+                    "id": "textnomfvC",
+                    "label": "NOMBRE:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcedfvC",
+                    "dataType": "integer",
+                    "id": "textcedfvC",
+                    "label": "CÉDULA:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcarfvC",
+                    "dataType": "string",
+                    "id": "textcarfvC",
+                    "label": "CARGO:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textinsfvC",
+                    "dataType": "string",
+                    "id": "textinsfvC",
+                    "label": "INSTITUCIÓN:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                }
+
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "POR PARTE DEL ESTABLECIMIENTO:",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "text",
+                    "variable": "textnomevC",
+                    "dataType": "string",
+                    "id": "textnomevC",
+                    "label": "NOMBRE:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcedevC",
+                    "dataType": "integer",
+                    "id": "textcedevC",
+                    "label": "CÉDULA:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcarevC",
+                    "dataType": "string",
+                    "id": "textcarevC",
+                    "label": "CARGO:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textinsevC",
+                    "dataType": "string",
+                    "id": "textinsevC",
+                    "label": "INSTITUCIÓN:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 3
+
+                }
+
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "NOTIFICACIÓN VISITA CONTROL",
+                    "colSpan": 12,
+                    "bold": true
+                }
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "POR PARTE DEL FUNCIONARIO DE SALUD:",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "text",
+                    "variable": "textnomfvC",
+                    "dataType": "string",
+                    "id": "textnomfvC",
+                    "label": "NOMBRE:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcedfvC",
+                    "dataType": "integer",
+                    "id": "textcedfvC",
+                    "label": "CÉDULA:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcarfvC",
+                    "dataType": "string",
+                    "id": "textcarfvC",
+                    "label": "CARGO:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+
+            ],
+            [{
+                    "type": "subtitle",
+                    "id": "title0000000001",
+                    "label": "POR PARTE DEL ESTABLECIMIENTO:",
+                    "colSpan": 12
+
+                }
+
+            ],
+            [{
+                    "type": "text",
+                    "variable": "textnomevC",
+                    "dataType": "string",
+                    "id": "textnomevC",
+                    "label": "NOMBRE:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcedevC",
+                    "dataType": "integer",
+                    "id": "textcedevC",
+                    "label": "CÉDULA:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                },
+                {
+                    "type": "text",
+                    "variable": "textcarevC",
+                    "dataType": "string",
+                    "id": "textcarevC",
+                    "label": "CARGO:",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "colSpan": 4
+
+                }
+
+            ]
+        ]
+    }]
+}
