@@ -1,0 +1,270 @@
+{
+    "name": "prueba",
+    "description": "",
+    "items": [{
+        "name": "prueba",
+        "description": "Titulo Formulario",
+        "items": [
+            [{
+                    "type": "dropdown",
+                    "variable": "select1",
+                    "dataType": "string",
+                    "id": "select1",
+                    "label": "dropdown_1",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "Hola soy un hint",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "sql": "",
+                    "nombresql": "",
+                    "sqldependiente": "selectr sadas asd where id= ? ",
+                    "nombresqldependiente": "consultaCiudad",
+                    "dependencies": [
+                        { "variable": "dropdowciudades" }
+                    ],
+                    "options": [{
+                            "value": "1",
+                            "label": "Valor 1"
+                        },
+                        {
+                            "value": "2",
+                            "label": "Valor 2"
+                        }
+                    ],
+                    "colSpan": 6,
+                    "filter": true
+                },
+                {
+                    "type": "text",
+                    "variable": "text1",
+                    "dataType": "string",
+                    "id": "text1",
+                    "label": "text_1",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "Hola soy un hint",
+                    "required": false,
+                    "requiredFieldErrorMessage": "",
+                    "sqldependiente": "select nopmbre, direc, correo from usuarios where cedula= ?",
+                    "nombresqldependiente": "consultaCiudad",
+                    "dependencies": [
+                        { "variable": "textnombre" },
+                        { "variable": "textdireccion" },
+                        { "variable": "textcorreo" }
+                    ],
+                    "filter": true,
+                    "colSpan": 6
+                }
+            ],
+            [{
+                "type": "subtitle",
+                "id": "subtitle0000000001",
+                "label": "subtitle_1",
+                "colSpan": 12
+            }],
+
+            [{
+                    "type": "datetime",
+                    "variable": "time1",
+                    "dataType": "datetime",
+                    "id": "time1",
+                    "label": "datetime_1",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "hola soy un hint",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+                },
+                {
+                    "type": "multipleFile",
+                    "variable": "file1",
+                    "dataType": "multiplefile",
+                    "id": "file1",
+                    "label": "multipleFile_1",
+                    "required": false,
+                    "requiredFieldErrorMessage": "Debe seleccionar un archivo",
+                    "extensions": "*",
+                    "size": 1024,
+                    "sizeUnity": "KB",
+                    "colSpan": 6
+                }
+            ],
+            [{
+                    "type": "time",
+                    "variable": "timer1",
+                    "dataType": "time",
+                    "id": "timer1",
+                    "label": "Tiempo",
+                    "placeholder": "Seleccione fecha",
+                    "hint": "hola soy un hint",
+                    "required": true,
+                    "requiredFieldErrorMessage": "La fecha es obligatoria",
+                    "defaultDate": "",
+                    "colSpan": 6
+                }
+
+            ],
+            [{
+                    "type": "multipleFile",
+                    "variable": "file2",
+                    "dataType": "multiplefile",
+                    "id": "file2",
+                    "label": "multipleFile_2",
+                    "required": true,
+                    "requiredFieldErrorMessage": "Debe seleccionar un archivo 2",
+                    "extensions": "*",
+                    "size": 1024,
+                    "sizeUnity": "KB",
+                    "colSpan": 6
+                },
+                {
+                    "type": "multipleFile",
+                    "variable": "file3",
+                    "dataType": "multiplefile",
+                    "id": "file3",
+                    "label": "multipleFile_3",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "extensions": "*",
+                    "size": 1024,
+                    "sizeUnity": "KB",
+                    "colSpan": 6
+                }
+            ],
+            [{
+                "type": "grid",
+                "variable": "grid1",
+                "dataType": "grid",
+                "id": "grid1",
+                "label": "Personal administrativo",
+                "hint": "",
+                "required": true,
+                "requiredFieldErrorMessage": "",
+                "columns": [{
+                        "type": "text",
+                        "variable": "",
+                        "dataType": "",
+                        "id": "text0000000002",
+                        "label": "nombre",
+                        "defaultValue": "",
+                        "placeholder": "",
+                        "hint": "",
+                        "required": true,
+                        "requiredFieldErrorMessage": "",
+                        "sql": "",
+                        "title": "nombre"
+                    },
+                    {
+                        "type": "datetime",
+                        "variable": "",
+                        "dataType": "",
+                        "id": "datetime0000000001",
+                        "label": "fecha ingreso",
+                        "placeholder": "",
+                        "hint": "",
+                        "required": false,
+                        "requiredFieldErrorMessage": "",
+                        "defaultDate": "",
+                        "title": "fecha ingreso"
+                    },
+                    {
+                        "type": "textarea",
+                        "variable": "",
+                        "dataType": "",
+                        "id": "textarea0000000001",
+                        "label": "descripcion",
+                        "defaultValue": "",
+                        "placeholder": "",
+                        "hint": "",
+                        "required": true,
+                        "requiredFieldErrorMessage": "",
+                        "sql": "",
+                        "rows": "5",
+                        "title": "descripcion"
+                    },
+                    {
+                        "type": "dropdown",
+                        "variable": "",
+                        "dataType": "",
+                        "id": "dropdown0000000002",
+                        "label": "ciudad",
+                        "defaultValue": "2",
+                        "placeholder": "",
+                        "hint": "",
+                        "required": true,
+                        "requiredFieldErrorMessage": "",
+                        "sql": "",
+                        "options": [{
+                                "value": "1",
+                                "label": "Pasto"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Cali"
+                            }
+                        ],
+                        "title": "ciudad"
+                    },
+                    {
+                        "type": "checkbox",
+                        "variable": "",
+                        "dataType": "",
+                        "id": "checkbox0000000001",
+                        "label": "Casado",
+                        "defaultValue": false,
+                        "hint": "",
+                        "required": true,
+                        "requiredFieldErrorMessage": "",
+                        "options": [],
+                        "title": "Casado"
+                    },
+                    {
+                        "type": "time",
+                        "variable": "timergrid",
+                        "dataType": "time",
+                        "id": "timergrid",
+                        "label": "Hora llegada",
+                        "placeholder": "Escriba Hora",
+                        "hint": "hola soy un hint",
+                        "required": false,
+                        "requiredFieldErrorMessage": "La hora de llegada es obligatoria",
+                        "defaultDate": "",
+                        "colSpan": 6
+                    }
+                ],
+                "mode": "card",
+                "title": "Personal administrativo",
+                "colSpan": 12
+            }],
+            [{
+                "type": "grid",
+                "variable": "grid2",
+                "dataType": "grid",
+                "id": "grid2",
+                "label": "Personal administrativo 2",
+                "hint": "",
+                "required": false,
+                "requiredFieldErrorMessage": "",
+                "columns": [{
+                    "type": "text",
+                    "variable": "",
+                    "dataType": "",
+                    "id": "text0000000003",
+                    "label": "nombre",
+                    "defaultValue": "",
+                    "placeholder": "",
+                    "hint": "",
+                    "required": true,
+                    "requiredFieldErrorMessage": "",
+                    "sql": "",
+                    "title": "nombre"
+                }],
+                "mode": "parent",
+                "title": "Personal administrativo",
+                "colSpan": 12
+            }]
+        ]
+    }]
+}
